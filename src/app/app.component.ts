@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aprendiendo-angular';
+  public title = 'Aprendiendo-Angular';
+  public mostrar_videojuegos = true;
+
+  mostrarocultarVideojuegos(valor:boolean) {
+    this.mostrar_videojuegos = valor;
+  }
 }
